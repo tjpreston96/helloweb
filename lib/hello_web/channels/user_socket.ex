@@ -1,6 +1,7 @@
 defmodule HelloWeb.UserSocket do
   use Phoenix.Socket
 
+  channel "room:lobby", HelloWeb.RoomChannel
   ## Channels
   # channel "room:*", HelloWeb.RoomChannel
 
